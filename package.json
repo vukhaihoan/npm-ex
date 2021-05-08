@@ -1,11 +1,17 @@
 {
-  "name": "example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "dev": "webpack --mode production --watch --progress ",
+        "build": "webpack --mode production --progress "
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^5.36.2",
+        "webpack-cli": "^4.7.0"
+    }
 }
